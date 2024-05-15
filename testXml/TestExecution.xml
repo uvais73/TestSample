@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Lambda Test Automation">
+	<parameter name="deviceHost" value="localhost" />
+	<parameter name="devicePort" value="4444" />
+	<parameter name="browserName" value="chrome_windows" />
+	<listeners>
+		<listener class-name="utils.Report" />
+		</listeners>
+	<test name="Sample Execution" parallel="classes" thread-count="2"
+		preserve-order="true">
+		<classes>
+			<class
+				name="assignment.Task1"></class>
+		</classes>
+	</test>
+
+	
+
+
+</suite>
